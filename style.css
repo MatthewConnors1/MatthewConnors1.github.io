@@ -1,18 +1,31 @@
+/*
+Background color: #f4f4f4;
+Secondary color: #24445c;
+Accent color: #f28c28;
+*/
+
+:root {
+--primary: #f4f4f4;
+--secondary: #24445c;
+--accent: #f28c28;
+
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: var(--primary);
 }
 
 header {
-    background-color: #4f6d7a;
+    background-color: var(--secondary);
     color: white;
     text-align: center;
     padding: 20px;
 }
 
 nav {
-    background-color: #6f8f9c;
+    background-color: var(--secondary);
     text-align: center;
     padding: 15px;
 }
@@ -35,9 +48,14 @@ section {
     margin-bottom: 20px;
     padding: 20px;
 }
+.cta{
+    background-color: var(--accent);
+    color: white;
+    padding: 10px 20px;
+}
 
 footer {
-    background-color: #4f6d7a;
+    background-color: var(--secondary);
     color: white;
     text-align: center;
     padding: 15px;
